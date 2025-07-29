@@ -1,0 +1,29 @@
+sudo apt install nvidia-cuda-toolkit
+
+nvcc --version
+
+sudo apt install cuda
+
+# Instalar o driver da GPU
+sudo ubuntu-drivers list --gpgpu
+
+# Baseado no output selecionar um driver server
+
+sudo apt install nvidia-driver-535-server
+
+nvcc --version
+
+#reiniciar o computador
+
+#check
+
+nvidia-smi
+
+conda create -n scvi 
+
+source activate scvi 
+
+pip install torch torchvision torchaudio
+
+pip install -U scvi-tools[cuda]
+
